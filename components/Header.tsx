@@ -9,7 +9,7 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
         <div className="details">
           {userImg && (
             <Image
-              src={userImg || "/assets/images/dummy.jpg"}
+              src={userImg}
               alt="user"
               width={66}
               height={66}
