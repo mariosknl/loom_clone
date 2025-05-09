@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Marios-Kanellopoulos-s-workspace-9hc07m.eu-west-1.xata.sh/db/marios_snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
