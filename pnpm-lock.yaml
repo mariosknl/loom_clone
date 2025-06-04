@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@arcjet/inspect':
-        specifier: 1.0.0-beta.7
-        version: 1.0.0-beta.7
+        specifier: 1.0.0-beta.8
+        version: 1.0.0-beta.8
       '@arcjet/next':
         specifier: 1.0.0-beta.7
         version: 1.0.0-beta.7(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -94,6 +94,10 @@ packages:
     resolution: {integrity: sha512-LAJSQ1aJoXP0NoFcKPA0MCQaEKkbcyHUu1K1D57NWgYUTKn52fPF6z3X80llqCU1azjDyUmcwzpxU5ohkVdsbg==}
     engines: {node: '>=18'}
 
+  '@arcjet/cache@1.0.0-beta.8':
+    resolution: {integrity: sha512-bVpoSYRiBtsOnXJNow5rnZbNcZ3p0yxui3GcSNJVp4eIlj/6srO4jobAqzAUW8ABGpsu75Ft3t7aaB0Y6HxKzg==}
+    engines: {node: '>=18'}
+
   '@arcjet/duration@1.0.0-beta.7':
     resolution: {integrity: sha512-ZJkh1vHFS6uzt5QCF/2v7DNrzI19gTlrIxakf1aCLbq1NqfNb6CwvG50dYKhKAauOf/NQo7cPWM7CO25gk3Ciw==}
     engines: {node: '>=18'}
@@ -106,8 +110,8 @@ packages:
     resolution: {integrity: sha512-FLXSxkY+1nn85w8qN2O6Ilbh89u/UeZF8Av+wP20UFMYj5+ccbzIXpm+d9a8fqTc3LeOVZ+W1ojybBVGvp5NUw==}
     engines: {node: '>=18'}
 
-  '@arcjet/inspect@1.0.0-beta.7':
-    resolution: {integrity: sha512-LSJMvMSJFUYgKexPhhok7H88rdGzkettVuukuFIuHiHn3A0eGdZtqVgRmEDebHAEoIJLB/aT1mWpCLSW+FwFhg==}
+  '@arcjet/inspect@1.0.0-beta.8':
+    resolution: {integrity: sha512-n/Jz+oK11NfBl5tmksOGxweqp8oL2a2BEZcAfozbZr4734nRGIYxmLBOzgVg7s88vqBovyXn64ehKY7aFBHp0A==}
     engines: {node: '>=18'}
 
   '@arcjet/ip@1.0.0-beta.7':
@@ -126,6 +130,10 @@ packages:
 
   '@arcjet/protocol@1.0.0-beta.7':
     resolution: {integrity: sha512-qtvBvjSLwBdn0ilDtvjbAs1wpt4qqglC5ZZ7LxVaD/OzhSXhFplBEc0p8aHq3GOJFZNZfuYzls6VSxk7fjB8Xw==}
+    engines: {node: '>=18'}
+
+  '@arcjet/protocol@1.0.0-beta.8':
+    resolution: {integrity: sha512-f6oJ6vq73tKRSVJGE+Km2hJwfroIgZurkRL2gPJvW65AWHDh6pQbqrusa2qYaIuWlyUqUHI4vnlZSKkFdk/zzw==}
     engines: {node: '>=18'}
 
   '@arcjet/runtime@1.0.0-beta.7':
@@ -2686,15 +2694,17 @@ snapshots:
       '@arcjet/analyze-wasm': 1.0.0-beta.7
       '@arcjet/protocol': 1.0.0-beta.7
 
+  '@arcjet/cache@1.0.0-beta.8': {}
+
   '@arcjet/duration@1.0.0-beta.7': {}
 
   '@arcjet/env@1.0.0-beta.7': {}
 
   '@arcjet/headers@1.0.0-beta.7': {}
 
-  '@arcjet/inspect@1.0.0-beta.7':
+  '@arcjet/inspect@1.0.0-beta.8':
     dependencies:
-      '@arcjet/protocol': 1.0.0-beta.7
+      '@arcjet/protocol': 1.0.0-beta.8
 
   '@arcjet/ip@1.0.0-beta.7': {}
 
@@ -2715,6 +2725,13 @@ snapshots:
 
   '@arcjet/protocol@1.0.0-beta.7':
     dependencies:
+      '@bufbuild/protobuf': 1.10.1
+      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.1)
+      typeid-js: 1.2.0
+
+  '@arcjet/protocol@1.0.0-beta.8':
+    dependencies:
+      '@arcjet/cache': 1.0.0-beta.8
       '@bufbuild/protobuf': 1.10.1
       '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.1)
       typeid-js: 1.2.0
