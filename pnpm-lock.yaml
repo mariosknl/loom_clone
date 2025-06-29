@@ -15,8 +15,8 @@ importers:
         specifier: 1.0.0-beta.8
         version: 1.0.0-beta.8(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@xata.io/client':
-        specifier: 0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa
-        version: 0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa(typescript@5.8.3)
+        specifier: 0.30.1
+        version: 0.30.1(typescript@5.8.3)
       better-auth:
         specifier: ^1.2.7
         version: 1.2.12
@@ -28,7 +28,7 @@ importers:
         version: 16.5.0
       drizzle-orm:
         specifier: ^0.43.1
-        version: 0.43.1(@xata.io/client@0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa(typescript@5.8.3))(kysely@0.28.2)(pg@8.15.6)
+        version: 0.43.1(@xata.io/client@0.30.1(typescript@5.8.3))(kysely@0.28.2)(pg@8.15.6)
       next:
         specifier: 15.3.4
         version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1038,8 +1038,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@xata.io/client@0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa':
-    resolution: {integrity: sha512-4Js4SAKwmmOPmZVIS1l2K8XVGGkUOi8L1jXuagDfeUX56n95wfA4xYMSmsVS0RLMmRWI4UM4bp5UcFJxwbFYGw==}
+  '@xata.io/client@0.30.1':
+    resolution: {integrity: sha512-dAzDPHmIfenVIpF39m1elmW5ngjWu2mO8ZqJBN7dmYdXr98uhPANfLdVZnc3mUNG+NH37LqY1dSO862hIo2oRw==}
     peerDependencies:
       typescript: '>=4.5'
 
@@ -3447,7 +3447,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.7.2':
     optional: true
 
-  '@xata.io/client@0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa(typescript@5.8.3)':
+  '@xata.io/client@0.30.1(typescript@5.8.3)':
     dependencies:
       typescript: 5.8.3
 
@@ -3767,9 +3767,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.43.1(@xata.io/client@0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa(typescript@5.8.3))(kysely@0.28.2)(pg@8.15.6):
+  drizzle-orm@0.43.1(@xata.io/client@0.30.1(typescript@5.8.3))(kysely@0.28.2)(pg@8.15.6):
     optionalDependencies:
-      '@xata.io/client': 0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa(typescript@5.8.3)
+      '@xata.io/client': 0.30.1(typescript@5.8.3)
       kysely: 0.28.2
       pg: 8.15.6
 
