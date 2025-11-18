@@ -28,7 +28,7 @@ importers:
         version: 17.2.3
       drizzle-orm:
         specifier: ^0.44.0
-        version: 0.44.6(@xata.io/client@0.30.1(typescript@5.9.3))(better-sqlite3@12.4.1)(kysely@0.28.8)(pg@8.16.3)
+        version: 0.44.7(@xata.io/client@0.30.1(typescript@5.9.3))(better-sqlite3@12.4.1)(kysely@0.28.8)(pg@8.16.3)
       next:
         specifier: 15.5.6
         version: 15.5.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -1372,8 +1372,8 @@ packages:
     resolution: {integrity: sha512-+CHgPFzuoTQTt7cOYCV6MOw2w8vqEn/ap1yv4bpZOWL03u7rlVRQhUY0WYT3rHsgVTXwYQDZaSUJSQrMBUKuWg==}
     hasBin: true
 
-  drizzle-orm@0.44.6:
-    resolution: {integrity: sha512-uy6uarrrEOc9K1u5/uhBFJbdF5VJ5xQ/Yzbecw3eAYOunv5FDeYkR2m8iitocdHBOHbvorviKOW5GVw0U1j4LQ==}
+  drizzle-orm@0.44.7:
+    resolution: {integrity: sha512-quIpnYznjU9lHshEOAYLoZ9s3jweleHlZIAWR/jX9gAWNg/JhQ1wj0KGRf7/Zm+obRrYd9GjPVJg790QY9N5AQ==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -2136,8 +2136,8 @@ packages:
       sass:
         optional: true
 
-  node-abi@3.78.0:
-    resolution: {integrity: sha512-E2wEyrgX/CqvicaQYU3Ze1PFGjc4QYPGsjUrlYkqAE0WjHEZwgOsGMPMzkMse4LjJbDmaEuDX3CM036j5K2DSQ==}
+  node-abi@3.85.0:
+    resolution: {integrity: sha512-zsFhmbkAzwhTft6nd3VxcG0cvJsT70rL+BIGHWVq5fi6MwGrHwzqKaxXE+Hl2GmnGItnDKPPkO5/LQqjVkIdFg==}
     engines: {node: '>=10'}
 
   object-assign@4.1.1:
@@ -3847,7 +3847,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.6(@xata.io/client@0.30.1(typescript@5.9.3))(better-sqlite3@12.4.1)(kysely@0.28.8)(pg@8.16.3):
+  drizzle-orm@0.44.7(@xata.io/client@0.30.1(typescript@5.9.3))(better-sqlite3@12.4.1)(kysely@0.28.8)(pg@8.16.3):
     optionalDependencies:
       '@xata.io/client': 0.30.1(typescript@5.9.3)
       better-sqlite3: 12.4.1
@@ -4693,7 +4693,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  node-abi@3.78.0:
+  node-abi@3.85.0:
     dependencies:
       semver: 7.7.3
 
@@ -4849,7 +4849,7 @@ snapshots:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 2.0.0
-      node-abi: 3.78.0
+      node-abi: 3.85.0
       pump: 3.0.3
       rc: 1.2.8
       simple-get: 4.0.1
