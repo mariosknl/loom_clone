@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@arcjet/inspect':
-        specifier: 1.6.1
-        version: 1.6.1
+        specifier: 1.7.0
+        version: 1.7.0
       '@arcjet/next':
         specifier: 1.6.1
         version: 1.6.1(next@16.2.10(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
@@ -98,6 +98,10 @@ packages:
     resolution: {integrity: sha512-bAP+9hPS5gggcfoL63kctI5Ln7Na5bSNQmTBQApvH9Zi9g6va/7bsxlJzA4z+MqQJWYJgbO+wCICqCCrE8CELw==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
+  '@arcjet/cache@1.7.0':
+    resolution: {integrity: sha512-PQtmSQufzccQhWkbKf2m1Rk02kmgmCr9Ni9es5BXUGGZG3/fhiXm3iXq2XPFZ5zhoH1cDuFm3wXhsGOFUvvC7g==}
+    engines: {node: '>=22.21.0 <23 || >=24.5.0'}
+
   '@arcjet/duration@1.6.1':
     resolution: {integrity: sha512-GqZQaODAeXA08adM8pgzKIfy/LrzhEUTozG5xQ/UB2YZ0sFVbnm5KdXJ9yg2Rj/mSrFSghV7FRQH3EgXq06aYg==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
@@ -110,8 +114,8 @@ packages:
     resolution: {integrity: sha512-iwHdLuWkwuHjc26exmBNWrK4BMY+kDPIlVpcqkyrpDzYRE1hVj+v3igfRhs3IY8FxjgocCskYu3spI8mv7kh6Q==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
-  '@arcjet/inspect@1.6.1':
-    resolution: {integrity: sha512-Js14kaG/CLkozNwTfXOydCM2NmTlluP3ywzFdRVMO4DZZSJ9vy7uuqcvWpr4jlt3LMBVyAo4sP8bkuVQE+X6AA==}
+  '@arcjet/inspect@1.7.0':
+    resolution: {integrity: sha512-snwJt8FM7K+jXAvoYKu18iUgH5w9NMn0HjMh37HEsb/wO6E7KQJ/bgeUqRgTbG7RkB3eXNe2ctSiBfyYqz/i3Q==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
   '@arcjet/ip@1.6.1':
@@ -130,6 +134,10 @@ packages:
 
   '@arcjet/protocol@1.6.1':
     resolution: {integrity: sha512-hfz56aKtY64b/Q8V54NJgvs8u39L27D9vNvv2EuISBaJI6PtYRBIceuxRw/JtVuIJ3Usp795GwahAN2MsyWokw==}
+    engines: {node: '>=22.21.0 <23 || >=24.5.0'}
+
+  '@arcjet/protocol@1.7.0':
+    resolution: {integrity: sha512-209gd8U1MqmX15ocy8a6j4iYdTfGKj969na3bKrAiQaCUJRJnYaMftxk3ovwyFW16DqvBuyrrdYgU08WZ24acg==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
   '@arcjet/runtime@1.6.1':
@@ -2952,15 +2960,17 @@ snapshots:
 
   '@arcjet/cache@1.6.1': {}
 
+  '@arcjet/cache@1.7.0': {}
+
   '@arcjet/duration@1.6.1': {}
 
   '@arcjet/env@1.6.1': {}
 
   '@arcjet/headers@1.6.1': {}
 
-  '@arcjet/inspect@1.6.1':
+  '@arcjet/inspect@1.7.0':
     dependencies:
-      '@arcjet/protocol': 1.6.1
+      '@arcjet/protocol': 1.7.0
 
   '@arcjet/ip@1.6.1': {}
 
@@ -2983,6 +2993,12 @@ snapshots:
   '@arcjet/protocol@1.6.1':
     dependencies:
       '@arcjet/cache': 1.6.1
+      '@bufbuild/protobuf': 2.12.0
+      '@connectrpc/connect': 2.1.2(@bufbuild/protobuf@2.12.0)
+
+  '@arcjet/protocol@1.7.0':
+    dependencies:
+      '@arcjet/cache': 1.7.0
       '@bufbuild/protobuf': 2.12.0
       '@connectrpc/connect': 2.1.2(@bufbuild/protobuf@2.12.0)
 
@@ -5555,7 +5571,7 @@ snapshots:
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
 
-  typescript-eslint@8.60.1(eslint@10.4.1(jiti@2.7.0))(typescript@6.0.3):
+  typescript-eslint@8.60.1(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3):
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.60.1(@typescript-eslint/parser@8.60.1(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3)
       '@typescript-eslint/parser': 8.60.1(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3)
