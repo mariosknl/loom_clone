@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@arcjet/inspect':
-        specifier: 1.11.0
-        version: 1.11.0
+        specifier: 1.13.0
+        version: 1.13.0
       '@arcjet/next':
         specifier: 1.11.0
         version: 1.11.0(next@16.3.4(@babel/core@7.29.7)(@types/node@24.13.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
@@ -98,6 +98,10 @@ packages:
     resolution: {integrity: sha512-Lh9qbkb3vSG50ELZIR4yRwbhhFMt0ektqPH2VQobvbWQv2FRJnH8hGjOrmfYfcKNbOFsa0f6TsiPrC1QFBCsqw==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
+  '@arcjet/cache@1.13.0':
+    resolution: {integrity: sha512-D3fvCSW/8VnmAGJFXWzXMSiYWg1osGoKtnNegFMHmd0Kk/jNvX7P2q0UgvWSIH1gzLMYFMRSFzRkzz9Enojlxw==}
+    engines: {node: '>=22.21.0 <23 || >=24.5.0'}
+
   '@arcjet/duration@1.11.0':
     resolution: {integrity: sha512-nuedE8oYT3wt8e4oJf4GSm3LpIL884hGC+0Ax1+J3A+ZD1ZV3GQgs9UjKhq621lMcGJOZrIbLRuu86K0BAwXQg==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
@@ -110,8 +114,8 @@ packages:
     resolution: {integrity: sha512-TGQzearshSHkkgJystjSP0HW8ToXa98RUHBy6j63CLMDNYqCm5TaxokuBJxJkAIKkEaEhSGxdGI+TezhEryY7A==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
-  '@arcjet/inspect@1.11.0':
-    resolution: {integrity: sha512-gJfkscjTg1747YulkGFVPI7LrY2YO9w02SLp+tzEwE82u1ZTNbJ5fOZuohSb8G5jDuOuvDLopvpnalWEc+kZfg==}
+  '@arcjet/inspect@1.13.0':
+    resolution: {integrity: sha512-x0XKsTR6aDxCPDHe3qzibnRPyIeuBXR8vit2geNW4r/5eSPkArIOjMzqFoxPLjD0gfHgLMR8E49P3L78dXY0SA==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
   '@arcjet/ip@1.11.0':
@@ -130,6 +134,10 @@ packages:
 
   '@arcjet/protocol@1.11.0':
     resolution: {integrity: sha512-PjWSHXZ4Ntd9td/4N1AHLDN15lk1Ky7L/IGk1tE/FV4G8eVtSkooeV8t7MQQdyRPX90nbI8k77Xr2MTj4UUEwg==}
+    engines: {node: '>=22.21.0 <23 || >=24.5.0'}
+
+  '@arcjet/protocol@1.13.0':
+    resolution: {integrity: sha512-Utn+7BPLOnzoDzDJj0l7prK7Gr8dlyMul/FBy890LwyxyoH4yxniHFAeLHSw3idknFktKK+qI0DqDCf3MK4uQQ==}
     engines: {node: '>=22.21.0 <23 || >=24.5.0'}
 
   '@arcjet/runtime@1.11.0':
@@ -300,6 +308,9 @@ packages:
   '@bufbuild/protobuf@2.14.0':
     resolution: {integrity: sha512-C3UGsiCwSprE2NKIIFA3hCDlpXTMCAXRZuEVp88L1GY36Y41+rYL5fryE+nOFhp4p4JPQvdV8PQ4DWgHgeTE+w==}
 
+  '@bufbuild/protobuf@2.14.1':
+    resolution: {integrity: sha512-agRJn3+EJDUe8AvxTx/LnHA/GErvLE62pSaSk7+MwFOtOv8eWBu/qCq2qoZjBjVZ3C2aiFJCveuSs17KMkYGOw==}
+
   '@cacheable/memory@2.2.0':
     resolution: {integrity: sha512-CTLKqLItRCEixEAewD3/j9DB3/o96gpTPD4eJ1v+DGOlxZRZncRQkGYqqnAGCscYd6RNeXfGeiuCphsPtqyIfQ==}
 
@@ -321,6 +332,11 @@ packages:
 
   '@connectrpc/connect@2.1.2':
     resolution: {integrity: sha512-MXkBijtcX09R10Eb6sFeIetc6w6746eio6xtfuyVOH7oQAacT1X0GzMIQFux6Qy8cq3W/T5qX5Bei8YbFtmRGA==}
+    peerDependencies:
+      '@bufbuild/protobuf': ^2.7.0
+
+  '@connectrpc/connect@2.2.0':
+    resolution: {integrity: sha512-M63OQ1ZFcPUm85CuewJ9G9CMV8LjzGR9935xOnXNQGSazAbwMb3x2W7vXBYM1zqrP7XFD8uxp/dUAhirclgwnQ==}
     peerDependencies:
       '@bufbuild/protobuf': ^2.7.0
 
@@ -3117,15 +3133,17 @@ snapshots:
 
   '@arcjet/cache@1.11.0': {}
 
+  '@arcjet/cache@1.13.0': {}
+
   '@arcjet/duration@1.11.0': {}
 
   '@arcjet/env@1.11.0': {}
 
   '@arcjet/headers@1.11.0': {}
 
-  '@arcjet/inspect@1.11.0':
+  '@arcjet/inspect@1.13.0':
     dependencies:
-      '@arcjet/protocol': 1.11.0
+      '@arcjet/protocol': 1.13.0
 
   '@arcjet/ip@1.11.0': {}
 
@@ -3150,6 +3168,12 @@ snapshots:
       '@arcjet/cache': 1.11.0
       '@bufbuild/protobuf': 2.14.0
       '@connectrpc/connect': 2.1.2(@bufbuild/protobuf@2.14.0)
+
+  '@arcjet/protocol@1.13.0':
+    dependencies:
+      '@arcjet/cache': 1.13.0
+      '@bufbuild/protobuf': 2.14.1
+      '@connectrpc/connect': 2.2.0(@bufbuild/protobuf@2.14.1)
 
   '@arcjet/runtime@1.11.0': {}
 
@@ -3325,6 +3349,8 @@ snapshots:
 
   '@bufbuild/protobuf@2.14.0': {}
 
+  '@bufbuild/protobuf@2.14.1': {}
+
   '@cacheable/memory@2.2.0':
     dependencies:
       '@cacheable/utils': 2.5.0
@@ -3350,6 +3376,10 @@ snapshots:
   '@connectrpc/connect@2.1.2(@bufbuild/protobuf@2.14.0)':
     dependencies:
       '@bufbuild/protobuf': 2.14.0
+
+  '@connectrpc/connect@2.2.0(@bufbuild/protobuf@2.14.1)':
+    dependencies:
+      '@bufbuild/protobuf': 2.14.1
 
   '@drizzle-team/brocli@0.10.2': {}
 
